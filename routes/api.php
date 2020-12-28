@@ -369,3 +369,20 @@ Route::delete('likes/likeId}/delete',[
     'uses' => 'LikeController@destroy',
     'as' => 'Like.delete'
 ]);
+
+
+
+
+
+
+// Route Login / Register
+Route::post('login',[
+    'uses' => 'AuthController@login',
+    'as' => 'login.post'
+]);
+
+
+Route::post('register',[
+    'uses' => 'AuthController@register',
+    'as' => 'Auth.post'
+]);
