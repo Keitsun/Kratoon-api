@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
+
 
 class AuthController extends Controller
 {
@@ -35,4 +36,3 @@ class AuthController extends Controller
         $accessToken = auth()->user()->createToken('authToken')->accessToken;
     }
 }
-

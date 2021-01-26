@@ -386,3 +386,5 @@ Route::post('register',[
     'uses' => 'AuthController@register',
     'as' => 'Auth.post'
 ]);
+
+// Route::middleware('auth:api')->
